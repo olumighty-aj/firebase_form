@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Contact Form 01</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,700" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+<script nonce="d4e47207-1d8a-4ff2-8e8f-38d40f20f996">try{(function(w,d){!function(o,p,q,r){o[q]=o[q]||{};o[q].executed=[];o.zaraz={deferred:[],listeners:[]};o.zaraz.q=[];o.zaraz._f=function(s){return async function(){var t=Array.prototype.slice.call(arguments);o.zaraz.q.push({m:s,a:t})}};for(const u of["track","set","debug"])o.zaraz[u]=o.zaraz._f(u);o.zaraz.init=()=>{var v=p.getElementsByTagName(r)[0],w=p.createElement(r),x=p.getElementsByTagName("title")[0];x&&(o[q].t=p.getElementsByTagName("title")[0].text);o[q].x=Math.random();o[q].w=o.screen.width;o[q].h=o.screen.height;o[q].j=o.innerHeight;o[q].e=o.innerWidth;o[q].l=o.location.href;o[q].r=p.referrer;o[q].k=o.screen.colorDepth;o[q].n=p.characterSet;o[q].o=(new Date).getTimezoneOffset();if(o.dataLayer)for(const B of Object.entries(Object.entries(dataLayer).reduce(((C,D)=>({...C[1],...D[1]})),{})))zaraz.set(B[0],B[1],{scope:"page"});o[q].q=[];for(;o.zaraz.q.length;){const E=o.zaraz.q.shift();o[q].q.push(E)}w.defer=!0;for(const F of[localStorage,sessionStorage])Object.keys(F||{}).filter((H=>H.startsWith("_zaraz_"))).forEach((G=>{try{o[q]["z_"+G.slice(7)]=JSON.parse(F.getItem(G))}catch{o[q]["z_"+G.slice(7)]=F.getItem(G)}}));w.referrerPolicy="origin";w.src="/cdn-cgi/zaraz/s.js?z="+btoa(encodeURIComponent(JSON.stringify(o[q])));v.parentNode.insertBefore(w,v)};["complete","interactive"].includes(p.readyState)?zaraz.init():o.addEventListener("DOMContentLoaded",zaraz.init)}(w,d,"zarazData","script");})(window,document)}catch(e){throw fetch("/cdn-cgi/zaraz/t"),e;};</script></head>
+<body>
+
+  <div class="header">
+    <h2>FLICK LOAN <br> A Loan To Solve Finacial Needs </h2>
+  </div>
+
+  <div class="heade2">
+    <h2>Apply For a loan</h2>
+  </div>
+  
+  <div class="container">
+    <form id="form1">
+      <h3>Applicant Information</h3>
+      <input type="text" placeholder="Full Name" id="name" name="name" required>
+      <input type="email" placeholder="Email" id="email" name="email" required>
+      <input type="number" placeholder="Phone Number"  required>
+      <input type="text" placeholder="Address" id="address" required>
+
+      <div class="btn-box">
+       
+        <button type="button" id="Next1">Next</button>
+      </div>
+    </form>
+
+    <form id="form2">
+      <h3>LOAN INFORMATION</h3>
+      <input type="number" placeholder="Loan Amount" required>
+      <input type="date" placeholder="Date Applied" required>
+      <input type="number" placeholder="Applicant Number" required>
+      <input type="text" placeholder="Applicant Address" required>
+
+      <div class="btn-box">
+        <button type="button" id="back1">Back</button>
+        <button type="button" id="Next2">Next</button>
+      </div> 
+    </form>
+
+    <form id="form3">
+      <h3>PAYMENT INFORMATION</h3>
+      <input type="number" placeholder="Loan Amount" required>
+      <input type="date" placeholder="Date Date" required>
+      <input type="number" placeholder="Application Number" required>
+      <input type="text" placeholder=" Addr" required>
+
+      <div class="btn-box">
+        <button type="button" id="back2">Back</button>
+        <button type="button" id="submit">Submit</button>
+      </div>
+    </form>
+ 
+    <div class="step-row">
+      <div id="progress"></div>
+      <div class="step-col"> <small>Step 1</small></div>
+      <div class="step-col"> <small>Step 2</small></div>
+      <div class="step-col"> <small>Step 3</small></div>
+    </div>
+  </div>
+<!-- <section class="ftco-section">
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-md-6 text-center mb-5">
+<h2 class="heading-section">Contact Form</h2> 
+</div>
+</div>
+<div class="row justify-content-center">
+<div class="col-lg-10 col-md-12">
+<div class="wrapper">
+<div class="row no-gutters">
+<div class="col-md-7 d-flex align-items-stretch">
+<div class="contact-wrap w-100 p-md-5 p-4">
+<h3 class="mb-4">PERSONAL INFO</h3>
+<div id="form-message-warning" class="mb-4"></div>
+<div id="form-message-success" class="mb-4">
+Your message was sent, thank you!
+</div>
+<form method="POST" id="contactForm" name="contactForm">
+<div class="row">
+<div class="col-md-6">
+<div class="form-group">
+<input type="text" class="form-control" name="name" id="name" placeholder="Full Name">
+</div>
+</div>
+<div class="col-md-6">
+<div class="form-group">
+<input type="email" class="form-control" name="email" id="email" placeholder="Email">
+</div>
+</div>
+<div class="col-md-12">
+<div class="form-group">
+<input type="text" class="form-control" name="address" id="address" placeholder="Address">
+</div>
+</div>
+<div class="col-md-12">
+<div class="form-group">
+<textarea name="message" class="form-control" id="message" cols="30" rows="7" placeholder="Message"></textarea>
+</div>
+</div>
+<div class="col-md-12">
+<div class="form-group">
+<input type="submit" value="submit" class="btn btn-primary" id="submit">
+<div class="submitting"></div>
+</div>
+</div>
+</div>
+</form>
+
+
+<h3 class="mb-4">LOAN LINKS</h3>
+<form id="contactForm" name="contactForm">
+    <div class="row">
+    <div class="col-md-6">
+    <div class="form-group">
+    <input type="text" class="form-control" name="loanamount" id="loanamount" placeholder="Loan Amount">
+    </div>
+    </div>
+    <div class="col-md-6">
+    <div class="form-group">
+    <input type="email" class="form-control" name="date" id="date" placeholder="Date Applied">
+    </div>
+    </div>
+    <div class="col-md-12"> 
+    <div class="form-group">
+    <input type="text" class="form-control" name="paymentmethod" id="paymentmethod" placeholder="Payment Method">
+    </div>
+    </div>
+    <div class="col-md-12">
+    <div class="form-group">
+        <button type="button"  class="btn btn-primary" >Back</button>
+    <button type="button" class="btn btn-primary">Next</button>
+    <div class="submitting"></div>
+    </div>
+    </div>
+    </div>
+    </form>
+
+    
+<form id="contactForm" name="contactForm">
+    <div class="row">
+      <h3 class="mb-4">PAYMENT LINKS</h3>
+    <div class="col-md-6">
+    <div class="form-group">
+    <input type="text" class="form-control" name="amountpaid" id="amountpaid" placeholder="Amount Paid">
+    </div>
+    </div>
+    <div class="col-md-6">
+    <div class="form-group">
+    <input type="email" class="form-control" name="datepaid" id="datepaied" placeholder="Date Paid">
+    </div>
+    </div>
+    <div class="col-md-12"> 
+    <div class="form-group">
+    <input type="text" class="form-control" name="paymentmethod" id="paymentmethod" placeholder="Payment Method">
+    </div>
+    </div>
+    <div class="col-md-12">
+    <div class="form-group">
+        <button type="button"  class="btn btn-primary" >Back</button>
+    <button type="button" class="btn btn-primary">Submit</button>
+    <div class="submitting"></div>
+    </div>
+    </div>
+    </div>
+    </form>
+</div>
+</div> -->
+ <div class="col-md-5 d-flex align-items-stretch">
+<div class="info-wrap bg-primary w-100 p-lg-5 p-4">
+<h3 class="mb-4 mt-md-4">Contact us</h3>
+<div class="dbox w-100 d-flex align-items-start">
+<div class="icon d-flex align-items-center justify-content-center">
+<span class="fa fa-map-marker"></span>
+</div>
+<div class="text pl-3">
+<p><span>Address:</span> 198 West 21th Street, Suite 721 New York NY 10016</p>
+</div>
+</div>
+<div class="dbox w-100 d-flex align-items-center">
+<div class="icon d-flex align-items-center justify-content-center">
+<span class="fa fa-phone"></span>
+</div>
+<div class="text pl-3">
+<p><span>Phone:</span> <a href="tel://1234567920">+ 1235 2355 98</a></p>
+</div>
+</div>
+<div class="dbox w-100 d-flex align-items-center">
+<div class="icon d-flex align-items-center justify-content-center">
+<span class="fa fa-paper-plane"></span>
+</div>
+<div class="text pl-3">
+<p><span>Email:</span> <a href="/cdn-cgi/l/email-protection#c5acaba3aa85bcaab0b7b6acb1a0eba6aaa8"><span class="__cf_email__" data-cfemail="98f1f6fef7d8e1f7edeaebf1ecfdb6fbf7f5">[email&#160;protected]</span></a></p>
+</div>
+</div>
+<div class="dbox w-100 d-flex align-items-center">
+<div class="icon d-flex align-items-center justify-content-center">
+<span class="fa fa-globe"></span>
+</div>
+<div class="text pl-3">
+<p><span>Website</span> <a href="#">yoursite.com</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div> 
+</section> 
+<script>
+  var form1 = document.getElementById("form1");
+  var form2 = document.getElementById("form2");
+  var form3 = document.getElementById("form3");
+
+  var Next1 = document.getElementById("Next1");
+  var Next2 = document.getElementById("Next2");
+  var back1 = document.getElementById("back1");
+  var back2 = document.getElementById("back2");
+
+  var progress = document.getElementById("progress");
+
+  Next1.onclick = function(){
+    form1.style.left = "-450px";
+    form2.style.left= "40px";
+    progress.style.width = "243px";
+  }
+
+  back1.onclick = function(){
+    form1.style.left = "40px";
+    form2.style.left= "450px";
+    progress.style.width = "120px";
+  }
+ 
+  Next2.onclick = function(){
+    form2.style.left = "-450px";
+    form3.style.left= "40px";
+    progress.style.width = "360px";
+  }
+
+  back2.onclick = function(){
+    form2.style.left = "40px";
+    form3.style.left= "450px";
+    progress.style.width = "240px";
+  }
+
+
+</script>
+<script src="script.js"></script>
+<script type="module">
+      // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+  import { getDatabase, ref, set, get, child } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-database.js";
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyCyt4kjFMWfPPnQVRPhoU8WKn6jkoJDnZY",
+    authDomain: "grantform.firebaseapp.com",
+    projectId: "grantform",
+    storageBucket: "grantform.appspot.com",
+    messagingSenderId: "61651002095",
+    appId: "1:61651002095:web:9eb938b8c45f661fd7711a"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+ 
+  const db = getDatabase(app);
+
+  document.getElementById("submit").addEventListener('click', function(e){
+    e.preventDefault();
+
+    set(ref(db, 'user/' + document.getElementById("name").value), {
+      fullname: document.getElementById("name").value,
+      email: document.getElementById("email").value,
+      address: document.getElementById("address").value
+    }).then(()=> {
+        document.getElementById("name").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("address").value = "";
+    }).catch((error) => {
+      alert("Error Submitting Form:", error);
+    });
+
+    alert("Form Submitted Successfully");
+  })
+</script>
+<!-- <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/jquery.min.js"></script>
+<script src="js/popper.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/main.js"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317" integrity="sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA==" data-cf-beacon='{"rayId":"854d3a940f5f06ba","version":"2024.2.0","token":"cd0b4b3a733644fc843ef0b185f98241"}' crossorigin="anonymous"></script> -->
+</body>
+</html>
